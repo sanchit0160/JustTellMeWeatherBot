@@ -47,7 +47,7 @@ function getCurrentWeather(chatId) {
       const options = {
         method: 'GET',
         headers: {
-          'X-RapidAPI-Key': '0e2de2642bmsh251230126512fe6p1053d1jsn32dc12ba93ce',
+          'X-RapidAPI-Key': XRapidAPIKey,
           'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com'
         }
       };
