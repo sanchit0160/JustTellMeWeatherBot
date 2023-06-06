@@ -61,7 +61,7 @@ function getCurrentWeather(chatId) {
               const messageText = `The weather in ${data.location.name} is ${data.current.condition.text} with a temperature of ${data.current.temp_c} °C.`;
               bot.sendMessage(chatId, messageText)
               	.then(() => {              	  
-              	  const buttonMessage = 'Click on the button below to get the current weather again.';
+              	  const buttonMessage = 'Get the current weather again.';
               	  bot.sendMessage(chatId, buttonMessage, { reply_markup: keyboardMarkup });
               	})
               	.catch(error => console.error(error));
